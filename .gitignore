@@ -55,5 +55,6 @@ rsconnect/
 *.csv
 *.gdb/
 *.zip
-*.rds
+*.tsv
+*.jsonlist
 Final_Report.log
