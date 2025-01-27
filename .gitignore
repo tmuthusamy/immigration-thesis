@@ -57,4 +57,10 @@ rsconnect/
 *.zip
 *.tsv
 *.jsonlist
+*.xlsm
+*.txt
+*.json
+*.npz
+*.gensim
+*.npy
 Final_Report.log
