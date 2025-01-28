@@ -1,11 +1,3 @@
----
-title: "data_processing"
-author: "Tejas Muthusamy"
-date: "`r Sys.Date()`"
-output: pdf_document
----
-
-```{r}
 library(jsonlite)
 library(tidyverse)
 
@@ -19,9 +11,7 @@ data <- lapply(lines, function(line) {
   })
 })
 data <- data[!sapply(data, is.null)]
-```
 
-```{r}
 data_part_2 <- data[145401:290800]
 data_flattened <- unlist(data_part_2, recursive = FALSE)
 data_cleaned <- lapply(data_flattened, function(x) {
@@ -60,13 +50,7 @@ reshaped_df_part_2 <- result %>%
   )
 
 saveRDS(reshaped_df_part_2, "reshaped_df_part_2.RDS")
-```
 
-```{r}
 final_df <- rbind(reshaped_df_part_1, reshaped_df_part_2)
 saveRDS(final_df, "final_df.RDS")
-```
 
-```{r}
-final_df
-```
