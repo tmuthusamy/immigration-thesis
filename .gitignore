@@ -63,4 +63,5 @@ rsconnect/
 *.npz
 *.gensim
 *.npy
+*\_MACOSX
 Final_Report.log
