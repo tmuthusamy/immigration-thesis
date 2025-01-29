@@ -54,3 +54,4 @@ saveRDS(reshaped_df_part_2, "reshaped_df_part_2.RDS")
 final_df <- rbind(reshaped_df_part_1, reshaped_df_part_2)
 saveRDS(final_df, "final_df.RDS")
 
+final_df <- readRDS("final_df.RDS")
